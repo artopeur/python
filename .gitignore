@@ -5,3 +5,4 @@ Scripts/
 share/
 data/
 model_export.keras
+__pycache__/
