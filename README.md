@@ -23,3 +23,11 @@ activate
 ```
 pip install ipykernel
 ```
+
+# Koneoppiminen
+
+[koneoppiminen](./koneoppiminen/Syksy2024_projektitehtava.ipynb)
+
+[tietoliikenne](./tietoliikenne/kotiteht/)
+
+[testing](./testing/find.ipynb)
