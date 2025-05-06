@@ -24,10 +24,13 @@ activate
 pip install ipykernel
 ```
 
-# Koneoppiminen
+# Machine learning
 
-[koneoppiminen](./koneoppiminen/Syksy2024_projektitehtava.ipynb)
+[machine learning](./koneoppiminen/Syksy2024_projektitehtava.ipynb)
+
+# Modulation and channel estimation
 
 [tietoliikenne](./tietoliikenne/kotiteht/)
 
+# String manipulation
 [testing](./testing/find.ipynb)
