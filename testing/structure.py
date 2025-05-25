@@ -13,25 +13,19 @@ def wait_for_response()->str:
 
 def print_options(selection)->None:
     
-    text = ["Default: No proper input.","one", "two", "three", "four"]
-
-    if int(selection) >= 0:
-        print(text[int(selection)])
-    elif int(selection) > 5 or int(selection) == 0:
-        print(text[0])
-        
-    else:
-        print("no proper input given...")
+   print(res)
 
 if __name__ == "__main__":
     print("loading...")
 
     start()
+    res = []
     while(1):
-        test = 0
+        #test = 0
         for i in range(5):
             print("answer with numbers between 1-4")
             write_question(i)
-            res=wait_for_response()
-            print_options(res)
+            res.append(wait_for_response())
+        break
+    print_options(res)
             
