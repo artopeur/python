@@ -7,7 +7,7 @@ def save_to_database(words, file):
     print("written.")
 
 def get_saved_from_database(file):
-    print("read.")
+    #print("read.")
     #text = "this is, a test of luck. Come now."
     with open(file) as f:
         file_input = f.read()
@@ -47,10 +47,10 @@ def read_categorized(file):
                 rowstart.append(i+1)
                 row = []
     i = 0
-    print(address)
-    print(rowstart)
-    print(len(rowstart))
-    print(len(address))
+    #print(address)
+    #print(rowstart)
+    #print(len(rowstart))
+    #print(len(address))
     count = 0
     for i in range(len(address)):
         #print(data)
@@ -98,17 +98,19 @@ def transform_text_to_array(text):
         tokens.append(current)
     return tokens
 
-def transform_sentenses_to_list(sentenses):
-    
+def transform_sentenses_to_list(sentenses) ->list:
+    sentense_list = []
     current = ""
     for char in sentenses:
-        if char == "\n":
-            return current
-        elif char == "'":
+        if char in "\n.?!":
             current += char
+            sentense_list.append(current.strip())
+            current = ""
         else:
             current += char
-    return current
+    if current.strip():
+        sentense_list.append(current.strip())
+    return sentense_list
 
         
 
